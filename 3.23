@@ -1,0 +1,27 @@
+//Fausto Meza Lab 3.23
+#include "pch.h"
+#include <iostream>
+using namespace std;
+int main()
+{
+	int 1, 2, 3, 4; //define the numbers to ints 
+	//display the following menu of Geometry Calculator
+	cout << 1 << ". Calculate the Area of a Circle" << endl
+		<< 2 << ". Calculate the Area of a Rectangle" << endl
+		<< 3 << ". Calculate the Area of a Triangle" << endl
+		<< 4 << ". Quit" << endl
+		<< "Enter your choice (1-4) " << endl;
+	cin >> 1 >> 2 >> 3 >> 4;
+	if (cin == 1)
+	{
+		float pi = 3.14159
+			float radius;
+		cout << "Please enter the radius of the circle: " << endl;
+		cin >> radius;
+	else if (cin < 0)//to ensure that the number doesn't go below 0
+		cout << "The radius cannot be a negative number " << endl;
+	}
+
+		return 0;
+}
+
