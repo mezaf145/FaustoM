@@ -1,27 +1,68 @@
 //Fausto Meza Lab 3.23
-#include "pch.h"
+
 #include <iostream>
+#include <math.h>//included math library
 using namespace std;
 int main()
 {
-	int 1, 2, 3, 4; //define the numbers to ints 
+	int number;//defining "number" input
 	//display the following menu of Geometry Calculator
-	cout << 1 << ". Calculate the Area of a Circle" << endl
-		<< 2 << ". Calculate the Area of a Rectangle" << endl
-		<< 3 << ". Calculate the Area of a Triangle" << endl
-		<< 4 << ". Quit" << endl
+	cout  << "1. Calculate the Area of a Circle" << endl
+		 << "2. Calculate the Area of a Rectangle" << endl
+		 << "3. Calculate the Area of a Triangle" << endl
+		 << "4. Quit" << endl
 		<< "Enter your choice (1-4) " << endl;
-	cin >> 1 >> 2 >> 3 >> 4;
-	if (cin == 1)
+	cin >> number;
+	if (number != 4 && number != 3 && number != 2 && number != 1)
+		//to ensure you cannot enter nonexisting no.
 	{
-		float pi = 3.14159
-			float radius;
+		cout << "Error: That is not an option ";
+	}
+	if (number == 1)//area of a circle
+	{
+		float pi = 3.14159;//defining pi
+			float radius;//defining radius input
 		cout << "Please enter the radius of the circle: " << endl;
 		cin >> radius;
-	else if (cin < 0)//to ensure that the number doesn't go below 0
-		cout << "The radius cannot be a negative number " << endl;
+		if (radius < 0)//to ensure that the number doesn't go below 0
+		{
+			cout << "The radius cannot be a negative number " << endl;
+		}
+		float Area = pi * pow(radius, 2.0);//pi*r^2
+		cout << "The area of the circle is: " << Area << endl;//display
 	}
-
+	if (number == 2)//area of a rectangle
+	{
+		float length, width;
+		cout << "Enter the length of the rectangle" << endl;
+		cin >> length;
+		cout << "Enter the width of the rectangle" << endl;
+		cin >> width;
+		if (width < 0 && length < 0)//to ensure that the number doesn't go below 0
+		{
+			cout << "The mesurement cannot be a negative number " << endl;
+		}
+		float Area = length * width;
+		cout << "The area of the rectangle is: " << Area << endl;//display
+	}
+	if (number == 3)//area of a triangle
+	{
+		float base, height;
+		cout << "Give the base of the triangle" << endl;
+		cin >> base;
+		cout << "Give the height of the triangle" << endl;
+		cin >> height;
+		if (base < 0 && height < 0) //to ensure that the number doesn't go below 0
+		{
+			cout << "The mesurement cannot be a negative number " << endl;
+		}
+		float Area = base * height * .5;
+		cout << "The Area of the triangle is: " << Area << endl;//display
+	}
+	if (number == 4)
+	{
 		return 0;
+	}
+	return 0;
 }
 
