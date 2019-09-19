@@ -1,0 +1,39 @@
+//Fausto Meza Lab 3.28
+#include <iostream>
+
+using namespace std;
+
+int main()//1==yes 0==no
+{//Vegetarian-Vegan-gluten.free
+//Joe's: 0-0-0
+//Main: 1-0-1
+//Corner: 1-1-1
+//Mama's: 1-0-0
+//Chef's: 1-1-1
+	string answer1, answer2, answer3;//ask for the intel
+	cout << "Is anyone in your party Vegetarian?" << endl;
+	cin >> answer1;
+	cout << "Is anyone in your part Vegan?" << endl;
+	cin >> answer2;
+	cout << "Is anyone in your party gluten-free?" << endl;
+	cin >> answer3;
+	if (answer1, answer2, answer3 == "no")
+	{
+		cout >> "Your options are: " >> endl
+			>> "Joe's, Mama's" >> endl;
+	}
+	if (answer1, answer2, answer3 == "yes")
+	{
+		cout >> "Your options are: " >> endl
+			>> "Corner, Chef's, Main" >> endl;
+	}
+	if (answer1 != "yes", "no" && answer2 != "yes", "no" && answer3 != "yes", "no")
+	{
+		cout << "Please only enter 'yes' and 'no'" << endl;
+	}
+
+
+
+
+	return 0;
+}
