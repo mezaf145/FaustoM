@@ -1,0 +1,61 @@
+//Fausto Meza Lab 3.27
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+	string word1, word2, word3, word4;
+	cout << "Try rebooting the computer." << endl;
+	cout << "Did that fix the problem?" << endl;
+	cin >> word1;
+	if (word1 == "yes")
+	{
+		return 0;
+	}
+	if (word1== "no")
+	{
+		cout << "Reboot router and try to connect" << endl;
+		cout << "Did that fix the problem?" << endl;
+		cin >> word2;
+		if (word2== "yes")
+		{
+			return 0;
+		}
+		if (word2== "no")
+		{
+			cout << "Make sure the cables between the router and " <<
+				"modem are plugged in firmly" << endl;
+			cout << "Did that fix the problem?" << endl;
+			cin >> word3;
+			if (word3 == "yes")
+			{
+				return 0;
+			}
+			if (word3 == "no")
+			{
+				cout << "Move the router to a new location and try to connect" << endl;
+				cout << "Did that fix the problem?" << endl;
+				cin >> word4;
+				if (word4 == "yes")
+				{
+					return 0;
+				}
+				if (word4 == "no")
+				{
+					cout << "Get a new router." << endl;
+					return 0;
+				}
+			}
+
+		}
+	}
+	if (word1 != "yes", "no" && word2 != "yes", "no" && word3 != "yes", "no" && word4 != "yes", "no")
+	{
+		cout << "Please only enter 'yes' and 'no'" << endl;
+	}
+
+
+
+
+	return 0;
+}
