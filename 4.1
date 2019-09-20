@@ -8,22 +8,26 @@ int main()
 {
 	int number;
 	int sum = 0;
+	int count = 0;
 	//ask the user for a positive integer
 	cout << "Enter any postive integer:" << endl;
 	cin >> number;
-	number = number + 1;
+	while(number < 0)
+	{
+		cout << "Error: You cannot enter a negative number" << endl
+			<< "Try another number:" << endl;
+		cin >> number;
+	}
 	//loop to get sum of all int 1-int user entered
-	while (number> 0)
+	while (count < number)
 	{
-		number = number- 1;
-		sum = number+ sum;
-		
+		count = count + 1;
+		sum = count + sum;
+
 	}
+	cout << sum;
 	//write error when user enters negative no.
-	if (number <= 0)
-	{
-		cout << "Error: You cannot enter a negative number" << endl;
-	}
+	
 
 
 
