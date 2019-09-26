@@ -1,1 +1,42 @@
+//Lab 4.15 Fausto Meza
 
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+	//ask the user to enter today's sales for 5 stores
+	//then display the a bar graph comparing each store's sales
+	//each bar should be displayed by a row of asterisks
+	//each asterisk should be represented by $100 of sales
+	int store, stars, counter, total;
+	int sales;
+	string simple = "*";
+	for (store = 1; store <= 5; store++)
+	{
+		cout << "Enter todays sales for store" << store << endl;
+		cin >> sales;
+	}
+
+	cout << "Sales Bar Chart" << endl;
+	cout << "(Each * = $100)" << endl;
+	for (store = 1; store <= 5; store++)
+	{
+		cout << "Store" << store << ":";
+			stars = sales / 100;
+			for (counter = 0; counter < stars; counter++)
+			{
+				cout << simple;
+			}
+			cout << endl;
+	}
+	
+
+
+
+
+
+	return 0;
+}
