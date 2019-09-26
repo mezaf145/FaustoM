@@ -1,16 +1,35 @@
 //Fausto Meza Lab 4.2
 
-#include "pch.h"
+#include <stdio.h>
 #include <iostream>
 using namespace std;
 
 int main()//display the ASCII codes 0 - 127 display 16 characters in each line.
 {
-	while() //type dec number in code and 'add' them
+	char ch;
+	ch = 32;//to print the codes
+	int count;
+	//type dec number in code and 'add' them
+	while (ch < 127)
+	{
+		count = 0;
+		while (count < 16 && ch < 127)//add a range so it wouldnt be inf.
+		{
+			cout << ch << " ";
+			ch++;
+			count++;
+		}
+		cout << endl;
+		
+	}
+	if (ch > 127) //end program when character hits over 127
+	{
+		return 0;
+	}
+	cout << endl;
 
 
 
 
-
-	return 0;
+		return 0;
 }
