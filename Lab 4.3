@@ -1,1 +1,27 @@
+//Lab 4.3 Fausto Meza
+#include <iostream>
+using namespace std;
 
+int main()
+{
+	//assume ocean lvls is 1.5mm/yr
+	//display a table showing the no. of mm
+	//that the ocean will have risen each year for 
+	//the next 25 years
+	float initial_rate = 1.5;
+	float new_rate;//identify the rates
+	int year = 1;
+	
+	while (year <= 25)//have a loop to go over 25 yrs
+	{
+		new_rate = year * initial_rate;//multiply each rate by each yr
+		
+		cout << year << " " << new_rate << endl;//display like a table
+		year++;
+	}
+
+
+
+
+	return 0;//end program when exceeding over 25
+}
