@@ -48,7 +48,7 @@ double pow(double b, double e);
 //Puts the character into a string variable 's'
 //Inputs:
 // unit - the character that is inputed
-// Return - returns the value of unit to 's'
+// Return - returns the value of 'unit' to 's'
 string unit_to_s(char unit);
 //Purpose statement
 //Places characters and a double in a double variable 'c'
