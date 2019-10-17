@@ -1,22 +1,23 @@
-**
- * Instructions: *Using the design recipie*,
- * implement the missing code by following the TODO tags.
- **/
+**//Partner Lab 6 Tic Tac Toe CS1
+//Fausto Meza and Mary Valencia
+* Instructions: *Using the design recipie*,
+* implement the missing code by following the TODO tags.
+** /
 
- /**
-  * Tic-Tac-Toe
-  *
-  * Allows a user to play a game of tic tac toe in the terminal against a
-  * computer.
-  *
-  **/
+/**
+ * Tic-Tac-Toe
+ *
+ * Allows a user to play a game of tic tac toe in the terminal against a
+ * computer.
+ *
+ **/
 
 #include <string>
 #include <vector>
 #include <cassert>
 #include <iostream>
 
-using namespace std;
+	using namespace std;
 /**
  * Data definitions
  **/
@@ -127,19 +128,31 @@ void run() {
 		cin >> again;
 	}
 }
-void test() {
+void test() {//200% sure this is not the right way to assert
 	// TODO Implement these!
-	//Purpose:
 	test_space_to_s();
-	assert(static_cast<string>(space_to_s(s == Space);
+	//Should return Space possibilities when using 's'
+	//and is a string
+	assert(static_cast<string>(space_to_s(s 
+		== Space{ Empty, X, O }));
 	test_row_to_s();
-	assert
-	test_board_to_s();
-	assert
-	test_gamestate_message();
-	assert
-	test_end_game_message();
-	assert
+	//Should return Row possibilities including spaces
+	//when using 'r' and is a string
+	assert(static_cast<string>(row_to_s(r 
+		== Row{ Space left, center, right })));
+		test_board_to_s();
+	//Should return Board possibilities including rows
+	//when using 'b' and is a string
+		assert(static_cast<string>(board_to_s(b 
+			== Board{ Row top, middle, bottom })));
+		test_gamestate_message();
+	//Should return gamestate message when looking and using 'b' as board
+	//and 'turn' as Space and should become a string
+	assert(static_cast<string>(gamestate_message(b == Board && turn == Space)))
+		test_end_game_message();
+	//Should return end game message when looking and using 'b' as Board
+	//and 'win' as Space and should become a string
+	assert(static_cast<string>(end_game_message(b == Board && win == Space))
 }
 void run_game() {
 	// Initial game state with blank board and player one first.
@@ -170,52 +183,103 @@ void run_game() {
 
 //// Printers
 /*TODO*/
-
+//This contains space possibilities and returns them depending on 
+//what is in them
+//Input
+//Space - posibilites containing 'x' 'o' and '(empty)'
+//s - representing what to return
+//Empty - representing the empty space
+//X - representing a taken space by a player's turn
+//Output
+//" " - represents an empty space
+//"x" - represents a player's turn
+//"o" - represents the other player's turn
 string space_to_s(Space s) {
 	if (s == Space::Empty) {
-		return " ";
+		return " ";//Return an empty space if s is equal to empty
 	}
 	else if (s == Space::X) {
-		return "x";
+		return "x";//Return an X if s is equal to Player X's turn
 	}
 	else {
-		return "o";
+		return "o";//Return an O if s doesn't equal to Player X's turn
 	}
 }
 /*TODO*/
+//This contains the row options and returns them
+//Input
+//Row - the row options containing left center and right
+//r - representing the dot operator to Row options
+//Output
+//r.left - represents the left row of the board
+//r.center - represents the center row of the board
+//r.right - represents the right row of the board
 string row_to_s(Row r) {
-	return space_to_s(r.left) +
-		space_to_s(r.center) +
-		space_to_s(r.right);
+	return space_to_s(r.left) +//returns the left row of the board
+		space_to_s(r.center) +//returns the center row of the board
+		space_to_s(r.right);//returns the right row of the board
 }
 /*TODO*/
+//This contains all of the board options and returns them
+//Input 
+//Board - Representing the board options containing the rows of it
+//b - representing the dot operator to horizontal row options
+//Output
+//b.top - the top horizontal row of the board
+//b.middle - the middle horizontal row of the board
+//b.bottom - the bottom horizontal row of the board
 string board_to_s(Board b) {
-	return row_to_s(b.top) +
-		row_to_s(b.middle) +
-		row_to_s(b.bottom);
+	return row_to_s(b.top) +//returns the top horizontal row of the board
+		row_to_s(b.middle) +//returns the middle horizontal row of the board
+		row_to_s(b.bottom);//returns the bottom horizontal row of the board
 }
 
 /*TODO*/
-// Input
+//This Returns the end game message 
+//Input
+//Board b - represents the board
+//Space win - the deciding winner
+//Output
+//"Game Over" - end game message
 //// Space win - who was the winner? `Empty` means it's a cat's game
 string end_game_message(Board b, Space win) {
-	return "Game Over";
+	return "Game Over";//Return Game Over after someone wins or draws on the board
 }
 /*TODO*/
+//This returns the state of the game as a message 
+//Input
+//Board b - represents the board
+//Space turn - the turn taken by the player
+//Output 
+//"This is what the board looks like: " - gamestate message
 string gamestate_message(Board b, Space turn) {
 	return "This is what the board looks like: ";
+	//return the message after each turn
 }
 
 //// Get moves
 /*TODO*/
+//This gets the moves available onto the board 
+//Input
+//Board b - represents the board
+//Space turn - the turn taken by the player
+//Location - the specific location on the board
+//Output 
+//return 1 - representing the 'available' location
 Location get_move(Board b, Space turn) {
-	Location l = 0;
-	cin >> l;
-	return l;
+	Location l = 0;//have the location be 1 to mark as available
+	cin >> l;//cin a 1 to fill that location 
+	return l;//return it as 1('available')
 }
 /*TODO*/
+//This processes the move to the board
+//Input
+//Board b - represents the board
+//Space turn - the turn taken by the player
+//Output
+//return 0 - marks the location as taken
 Location compute_move(Board b, Space turn) {
-	return 0;
+	return 0;//return 0('taken') each turn played
 }
 
 
