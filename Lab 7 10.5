@@ -1,0 +1,40 @@
+//Lab 7 10.5
+//Fausto Meza
+
+#include <iostream>
+#include <string>
+using namespace std;
+//This function accepts a string and capitalizes
+//the first character in each sentence
+//Input
+//intro - the input of the user's sentences
+//Output
+//the refurnished version of the user's input(capitalized)
+string sentence(string intro);
+void test_sentence();
+string intro;
+
+int main(void)
+{
+	test_sentence();//capitalization function
+	cout << "Please introduce yourself!" << endl;//ask for sentence
+	cin >> intro;
+	cout << sentence(intro) << endl;
+	return 0;
+}
+
+
+void test_sentence() {
+	assert(sentence("string").compare("String")); //Dont fully understand.compare
+	assert(sentence("String").compare("String"));
+	assert(sentence("").compare("")); 
+}
+string sentence(string intro) {
+
+	while (intro != toupper(intro))//confusion
+	{
+		string letter(' ', intro.length);
+		toupper(letter[0]);//capitalizes 1st letter
+	}
+	return 0;
+}
