@@ -1,0 +1,36 @@
+//Lab 7 10.16
+//Fausto Meza
+
+#include <iostream>
+using namespace std;
+//This will ask the user for a string 
+//and then converts the string to Morse code.
+//Input
+//code - the string that the user input
+//Output 
+//the morse code based on the string input
+string code;
+string morse(code);
+void test_morse();
+int main(void);
+{
+	cout << "Enter a secret morse code sentence" << endl;
+	cin >> code;
+	cout << morse(code) << endl;
+	return 0;
+}
+void test_morse() {
+	assert(morse(" ").compare("space"));
+	assert(morse("\,").compare("--..--"));
+	assert(morse("\.").compare(".-.-.-"));
+	assert(morse("0").compare("-----"));
+	assert(morse("G").compare("--."));
+}
+string morse(code) {
+	int i = 0;
+	while (i < code.length()) {
+		...code[]...//No clue on converting each letter to morse
+			i = i + 1;
+	}
+	return code;
+}
