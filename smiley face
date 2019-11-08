@@ -1,0 +1,35 @@
+// ConsoleApplication18.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
+#include "pch.h"
+#include <iostream>
+using namespace std;
+int main()
+{
+	cout << "MMMMMMMMMMMMWX0xoc; , '''''''''', :cox0XWMMMMMMMMMMMM" << endl
+		<< "MMMMMMMMMWKxl; ',:ldxOO0KKKK0OOxdl:,'; lxKWMMMMMMMMM" << endl
+		<< "MMMMMMWXkc, ':okKNWMMMMMMMMMMMMMMWNKOd:', ckNMMMMMMM" << endl
+		<< "MMMMMXx : ';oONMMMMMMMMMMMMMMMMMMMMMMMMN0o;' : xXMMMMM" << endl
+		<< "MMMWO : ';dKWMMMMMMMMMMMMMMMMMMMMMMMMMMMMWXd;'cOWMMM" << endl
+		<< "MMNd, 'lKWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWKo', dNMM" << endl
+		<< "MXo',xNMMMMMMMMWKxxXMMMMMMMMMNOoxNMMMMMMMMMNx,'oXM" << endl
+		<< "No',xWMMMMMMMMMK:..oNMMMMMMMMO,.'xWMMMMMMMMMWk, 'oN" << endl
+		<< "k, 'dNMMMMMMMMMMk,..:KMMMMMMMWd...lXMMMMMMMMMMWx', k" << endl
+		<< "c.cKMMMMMMMMMMMO, ..cKMMMMMMMWx'..oNMMMMMMMMMMMXc.c" << endl
+		<< "''dWMMMMMMMMMMMNd; :OWMMMMMMMMXd; lKMMMMMMMMMMMMWx''" << endl
+		<< "., OMMMMMMMMMMMMMWXXWMMMMMMMMMMWNWMMMMMMMMMMMMMMO, ." << endl
+		<< "., OMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM0; ." << endl
+		<< ".'kMMMMWX0KWMMMMMMMMMMMMMMMMMMMMMMMMMMNOodKWMMMk,'" << endl
+		<< "; .oNMMM0:';0MMMMMMMMMMMMMMMMMMMMMMMMMMKc.;OWMMNd.;" << endl
+		<< "o.; OMMMNx, .oNMMMMMMMMMMMMMMMMMMMMMMMMWx',OWMMM0;.o" << endl
+		<< "0:.cKMMMNx, 'oXMMMMMMMMMMMMMMMMMMMMMMNx,,xNMMMXl.:K" << endl
+		<< "WO; 'lXMMMWO:'cONMMMMMMMMMMMMMMMMMMW0l';xNMMMXo'; OW" << endl
+		<< "MWO; 'c0WMMMXd;,ckXWMMMMMMMMMMMMMNOo,,o0WMMW0c':OWM" << endl
+		<< "MMWKl';dXMMMWXkl;;cdxkO00000Okdl:;:dKWMMMXx;'lKWMM" << endl
+		<< "MMMMNk : ':xXWMMMWXkdl:;;,,;,,;:cox0NWMMWXx:' : kNMMMM" << endl
+		<< "MMMMMMXx : ';oOXWMMMMWNNXKKKKKXNWMMMMWXOo;,:xXMMMMMM" << endl
+		<< "MMMMMMMMNOo; , ; ldOKNWWMMMMMMMMWWNKOxl; , :oONMMMMMMMM" << endl
+		<< "MMMMMMMMMMWN0dl : , , ; clooddddoolc;; , :lx0NMMMMMMMMMMM" << endl
+		<< "MMMMMMMMMMMMMMWXOdl : , '......', ; ldOXWMMMMMMMMMMMMMM" << endl;
+	return 0;
+}
