@@ -1,0 +1,66 @@
+# Conflict's Sanity
+
+## Overview
+This is a story based text horror adventure game. The player will play through
+the story of a journalist exploring an abandoned town. The player needs to manage
+the journalist's sanity level, so he wouldn't go insane(game over), by making 
+decisions that may or may not cost you to lose the game. It will consist of 
+different options and results depending on decision making. Different objects 
+will be interactable in the game to answer more storyline questions/mysteries,
+and images and sound will paint a picture in the player's mind so that the player
+can feel like they are in the game.
+
+## Background
+There are many horror games that try to give an uncomfortable feeling to the 
+player using images and sounds. If you try to find
+a good horror game, they are usually constructed with fancy graphics and are usually
+overpriced. Though, if you manage to find an affordable
+game, it's usually mediocre in terms of scaring someone with cheesy jumpscares
+that will get old throughout the game.
+
+I came with a solution to resolve this problem in the electronic world. I've seen
+many horror movies and horrific things in life, therefore 
+I believe I have a good eye for what is truly scary and what is not. It will take a lot 
+of effort to make this work, scary, and have an interesting story simultaneously.
+
+## Significance 
+This project will touch on keeping track of different possible endings the player
+could potentially end up while creating additional options 
+in between the decisions. I will be able to learn to move, sort, and store players' 
+decisions around the code while organizing my code to make 
+it as simplistic as it can be. Each decision made by the player will allow me to
+dictate if the decision will affect the "Sanity Level"
+of the player. Beyond this, this will teach everyone in the world what horror truly is.
+
+## Deliverables
+###Skeleton
+1. A list of options will be given to the player
+2. The player will be able to choose one decision over the other
+3. Each decision will output something different
+### Basic
+1. Create the player's sanity level 
+2. Repercussions to the player's decisions affecting the sanity level
+3. Ending to all of the player's decisions
+###Solid
+1. A story is being told to the player
+2. The player's decisions will lead to an ending of the game.
+3. The ending is meaningful 
+4. Player will know if they lose in the game
+### Awesome
+1. Pictures will show when the story is being told
+2. Sound will be played throughout the game
+3. Easter eggs will be able to be interacted with to tell back story.
+### Beyond
+1. Simple animation of the game.
+2. Output of the letters is timed and has sound per word.
+3. More endings based on very specific decisions.
+4. More meaningful decisions in the game.
+## Tools
+###C++
+A language and the only language that I believe I have a good grasp on.
+
+##Possible Problems
+The problems that could stand out while making this, will involve the results of the
+game being based on the player's sanity level and decisions. 
+Sound will probably be an issue to special cases.
+
