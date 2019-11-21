@@ -1,0 +1,52 @@
+//Fausto Meza 
+//Code review Ch.9 Problem 2
+
+#include <iostream>
+#include <vector>
+using namespace std;
+double AverageScore, UserScores, NumberUserScores, average;
+//This will assign a vector full of test scores
+//It will sort the scores in ascending order 
+//Input
+//scores - the vector of scores
+//Output
+//Sorted list of scores and average
+vector<double>scores;
+//This will get the average of the scores
+//from the vector
+//Input 
+//Userscores - the vector of scores
+//Output
+//The average score
+double AverageScore(double UserScores);
+int main()
+{
+	cout << "Give number of test scores:" << endl;
+	cin >> NumberUserScores;
+	cout << "Give the scores out of 100" << endl;
+	cin >> UserScores;
+	//put userscores to vector scores
+	//rearrange order of vector scores(separate function to re order?)
+	AverageScore(UserScores);
+	cout << UserScores;
+	
+}
+void test_AverageScore(double UserScores) {
+	assert(AverageScore(20.0,30.0,40.0) == 30.0);//identifier assert isnt defined
+	assert(AverageScore(0.0,0.0,1.0) == 0.33);//too many arguments in function call
+	assert(AverageScore(0.0) == 0);
+}
+//Psuedo Code
+//Get the average of the scores
+//Push back vector size based on number of scores
+//use scores from vector and get vector from each score
+double AverageScore(double UserScores) {
+	int i = 0;
+	while (i < NumberUserScores) {
+		scores.push_back(NumberUserScores - 1);
+		average = UserScores / NumberUserScores;
+		i = i + 1; 
+	}
+	return average;
+}
+
