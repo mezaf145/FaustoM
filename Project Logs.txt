@@ -1,0 +1,7 @@
+**Getting the sound to work and the sound to loop
+while the code can run. 
+Start: 11:15 AM 11/10/19
+Completed: 12:12 AM 11/11/19
+**Making the decision making system work
+Start: 4:02 11/21/19
+Completed: 4:26 PM 11/21/19
