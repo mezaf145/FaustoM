@@ -27,7 +27,7 @@ int main()
 
 			cout << "Want to hear me slamming the desk?" << endl;
 			cin >> Slamdecision;
-			if (decision == "Yes" || decision == "Y" || decision == "yes"
+			if (Slamdecision == "Yes" || Slamdecision == "Y" || Slamdecision == "yes"
 				|| decision == "y") {
 				PlaySound(TEXT("Hitting.wav"), NULL, SND_SYNC | SND_FILENAME);
 				cout << "I slammed the desk.." << endl;//should wait for sound to be played first
